@@ -1,2 +1,6 @@
 pandas>=2.0
 matplotlib>=3.7
+duckdb>=1.0
+plotly>=5.20
+statsmodels>=0.14
+pytest>=8.0

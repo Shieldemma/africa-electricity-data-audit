@@ -1,41 +1,57 @@
 # Africa Electricity Data Audit
 
-A reproducible quality audit of national electricity statistics for 30 sub-Saharan African countries (2000–2025), plus a short analysis of Nigeria's power mix.
+[![data-pipeline](https://github.com/Shieldemma/africa-electricity-data-audit/actions/workflows/pipeline.yml/badge.svg)](https://github.com/Shieldemma/africa-electricity-data-audit/actions/workflows/pipeline.yml)
 
-**Data:** [Our World in Data energy dataset](https://github.com/owid/energy-data). Its electricity series are built mainly on Ember and Energy Institute data.
-**Run it:** `pip install -r requirements.txt && python analyze.py`. The script downloads the CSV if it isn't already there, and writes everything to `outputs/`.
+**Live dashboard:** https://shieldemma.github.io/africa-electricity-data-audit/
 
-## What the audit checks
+An automated, tested pipeline that audits national electricity statistics for 30 sub-Saharan African countries (2000–2025). It cross-checks three public sources, runs its quality checks in both Python and SQL, and publishes an interactive dashboard that refreshes every month.
 
-| Check | What it catches | Flags (all countries / SSA sample) |
-|---|---|---|
-| Net imports exactly 0 in some years, non-zero in others | Missing values stored as 0, which silently sets demand = generation | 38 / 11 |
-| Net imports identical to the year before | Values carried forward instead of updated | 113 / 49 |
-| Demand >15% below generation | Real exporters, or generation from shared assets assigned to one country | 203 / 49 |
-| Year-on-year change in generation >40% (systems >1 TWh) | Breaks in series, new plants, or reporting changes worth checking | 39 / 9 |
-| Sources don't sum to the total; total with no fuel breakdown; gaps between years | Internal consistency | 0 in this release |
+## What it shows
 
-The full flag lists are in `outputs/quality_issues_all_countries.csv` and `outputs/quality_issues_sub_saharan_africa.csv`.
+| Skill | Where it lives |
+|---|---|
+| Multi-source data ingestion from bulk files and REST APIs (OWID, Ember, World Bank WDI) | `pipeline/fetch.py` |
+| Data validation: 6 automated checks plus cross-source reconciliation | `pipeline/checks.py`, `pipeline/crosscheck.py` |
+| SQL (DuckDB): the same checks written in SQL, with the pipeline asserting both versions agree | `sql/checks.sql`, `run_pipeline.py` |
+| Statistical modelling: log-linear OLS trend with a 90% prediction interval, out to 2030 | `pipeline/forecast.py` |
+| Interactive visualisation: Plotly dashboard served on GitHub Pages | `pipeline/dashboard.py` → `docs/index.html` |
+| Testing and CI/CD: pytest unit tests; GitHub Actions runs tests, refreshes the data monthly, and commits outputs | `tests/`, `.github/workflows/pipeline.yml` |
+| Communication: plain-English findings for non-specialists | this README, dashboard notes |
 
-## Findings
+Run it locally: `pip install -r requirements.txt && python -m pytest -q tests && python run_pipeline.py`. The Ember and World Bank downloads are optional; if a source can't be reached, the checks that depend on it are skipped and logged.
 
-**1. Nigeria's trade data shows a zero-vs-missing problem.** Net imports are small negative numbers (exports) in 2000–2004, then **exactly 0 for 2005–2015**, then about −2 to −3 TWh every year from 2016. Nigeria exported power to Niger, Benin and Togo throughout that period, so the zeros are almost certainly missing data, not "no trade". Anyone computing Nigerian demand from this series overstates it by about 2 TWh (~6–7%) for those years. The 2025 value (−2.30 TWh) also exactly repeats 2024's, which suggests a carried-forward estimate.
+## Checks
+
+| Check | What it catches |
+|---|---|
+| Net imports exactly 0 in some years, non-zero in others | Missing values stored as 0, which silently sets demand equal to generation |
+| Net imports identical to the year before | Values carried forward instead of updated |
+| Demand >15% below generation | Real exporters, or output from shared assets assigned to one country |
+| Year-on-year change in generation >40% (systems >1 TWh) | Breaks in a series, new plants, or reporting changes |
+| Sources don't sum to the total, and gaps between years | Internal consistency |
+| OWID vs Ember: generation differs by >2%; OWID shows 0 imports where Ember shows trade | Disagreement between sources or vintages |
+| OWID vs World Bank population differs by >3% | Population denominators behind the per-capita metrics |
+
+Flag tables: `outputs/quality_issues_*.csv`. Headline numbers: `outputs/key_facts.json`.
+
+## Findings so far
+
+**1. Zero-vs-missing trade data (Nigeria).** In OWID, Nigeria's net imports are small exports in 2000–2004, then **exactly 0 for 2005–2015**, then −2 to −3 TWh a year from 2016. Nigeria exported power to Niger, Benin and Togo throughout that period, so the zeros look like missing data. They inflate implied demand by about 2 TWh (6–7%) in those years. The pipeline compares this directly against Ember's net-import series (chart below and on the dashboard). The 2025 value also exactly repeats 2024's.
 
 ![Nigeria net imports](outputs/nigeria_net_imports_zero_vs_missing.png)
 
-**2. Partial latest years distort aggregates.** In this release, only 4 of the 30 sample countries have 2025 generation data. A naive sum gives a sub-Saharan solar share of 6.1% in 2025. Restricting to the 30 countries that report every year from 2015 to 2024 gives **0.6% (2015) → 4.8% (2024)**. The script builds that balanced panel automatically and saves the year-by-year coverage to `outputs/ssa_reporting_coverage_by_year.csv`.
+**2. Partial latest years bias regional totals.** Only 4 of the 30 countries have 2025 data in this release. A naive sum gives a 6.1% sub-Saharan solar share. A balanced panel of the 30 countries reporting every year from 2015 to 2024 gives **0.6% → 4.8%**. The log-linear trend is about 26% a year, which projects to roughly 19% by 2030 (90% interval about 17–22%). That is a statistical extrapolation, not a policy forecast.
 
-**3. Shared assets show up as "demand below generation".** Mali shows demand 16–37% below generation in 10 of the 11 years from 2002 to 2012, even though it is not a big net exporter. A plausible cause, which still needs verifying, is Manantali: a dam in Mali whose output is shared with Senegal and Mauritania. Côte d'Ivoire, Mozambique and Zambia also trip this check, but they are known exporters, so their flags are expected.
+![Solar share](outputs/ssa_solar_share_trend.png)
 
-**4. Nigeria's grid is gas-heavy, and its grid output per person is tiny.** In 2025, grid generation was 41.5 TWh: 68.7% gas, 30.9% hydro and 0.3% solar. That works out to about 175 kWh per person, among the lowest in the sample. Grid statistics also leave out Nigeria's very large diesel/petrol self-generation, so this series understates actual consumption.
+**3. Shared assets show up as "demand below generation".** Mali shows demand 16–37% below generation in 10 of the 11 years from 2002 to 2012. A plausible cause, which still needs verifying, is the Manantali dam: it sits in Mali, and its output is shared with Senegal and Mauritania.
 
-![Nigeria generation mix](outputs/nigeria_generation_mix.png)
-![SSA per-capita generation](outputs/ssa_per_capita_generation.png)
+**4. Nigeria's grid.** 41.5 TWh in 2025: 68.7% gas, 30.9% hydro. That is about 175 kWh per person, among the lowest in the sample. Grid statistics also leave out Nigeria's large diesel/petrol self-generation.
+
+![Nigeria mix](outputs/nigeria_generation_mix.png)
 
 ## Next steps
 
-- Cross-check flagged country-years against national utility, regulator and power-pool reports (e.g. NERC/TCN for Nigeria, WAPP).
-- Replace zeros with nulls where trade is known to exist, and document the imputation.
-- Add monthly data and API ingestion so the checks run on every new release.
+Cross-check flagged country-years against national and power-pool reports (TCN/NERC, WAPP). Replace false zeros with flagged nulls, and publish the imputation log. Add monthly Ember data.
 
 Author: Otuekong "Shield" Udo · [github.com/Shieldemma](https://github.com/Shieldemma)
