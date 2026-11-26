@@ -1,0 +1,5 @@
+check,all_countries,sub_saharan_sample
+demand_far_below_generation,203,49
+net_imports_repeated_exactly,113,49
+net_imports_zero_then_nonzero,38,11
+yoy_jump_over_40pct,39,9

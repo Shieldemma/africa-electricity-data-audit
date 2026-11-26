@@ -1,0 +1,119 @@
+check,country,iso,year,detail
+demand_far_below_generation,Cote d'Ivoire,CIV,2000,demand 3.56 vs generation 4.80 TWh
+demand_far_below_generation,Cote d'Ivoire,CIV,2001,demand 3.72 vs generation 4.88 TWh
+demand_far_below_generation,Cote d'Ivoire,CIV,2002,demand 3.72 vs generation 5.29 TWh
+demand_far_below_generation,Cote d'Ivoire,CIV,2003,demand 3.75 vs generation 5.08 TWh
+demand_far_below_generation,Cote d'Ivoire,CIV,2004,demand 4.09 vs generation 5.50 TWh
+demand_far_below_generation,Cote d'Ivoire,CIV,2005,demand 4.27 vs generation 5.67 TWh
+demand_far_below_generation,Cote d'Ivoire,CIV,2006,demand 4.57 vs generation 5.64 TWh
+demand_far_below_generation,Cote d'Ivoire,CIV,2017,demand 8.26 vs generation 10.12 TWh
+demand_far_below_generation,Democratic Republic of Congo,COD,2000,demand 4.67 vs generation 5.94 TWh
+demand_far_below_generation,Democratic Republic of Congo,COD,2001,demand 4.73 vs generation 5.92 TWh
+demand_far_below_generation,Democratic Republic of Congo,COD,2002,demand 4.75 vs generation 6.06 TWh
+demand_far_below_generation,Democratic Republic of Congo,COD,2003,demand 4.78 vs generation 6.11 TWh
+demand_far_below_generation,Democratic Republic of Congo,COD,2004,demand 5.63 vs generation 7.02 TWh
+demand_far_below_generation,Democratic Republic of Congo,COD,2005,demand 5.67 vs generation 7.33 TWh
+demand_far_below_generation,Democratic Republic of Congo,COD,2006,demand 6.19 vs generation 7.50 TWh
+demand_far_below_generation,Democratic Republic of Congo,COD,2007,demand 6.50 vs generation 7.83 TWh
+demand_far_below_generation,Mali,MLI,2002,demand 0.91 vs generation 1.11 TWh
+demand_far_below_generation,Mali,MLI,2003,demand 0.70 vs generation 1.11 TWh
+demand_far_below_generation,Mali,MLI,2004,demand 0.90 vs generation 1.26 TWh
+demand_far_below_generation,Mali,MLI,2005,demand 1.09 vs generation 1.49 TWh
+demand_far_below_generation,Mali,MLI,2006,demand 1.21 vs generation 1.57 TWh
+demand_far_below_generation,Mali,MLI,2007,demand 1.32 vs generation 1.58 TWh
+demand_far_below_generation,Mali,MLI,2008,demand 1.48 vs generation 1.81 TWh
+demand_far_below_generation,Mali,MLI,2009,demand 1.31 vs generation 1.56 TWh
+demand_far_below_generation,Mali,MLI,2010,demand 1.96 vs generation 2.36 TWh
+demand_far_below_generation,Mali,MLI,2012,demand 1.86 vs generation 2.31 TWh
+demand_far_below_generation,Mozambique,MOZ,2000,demand 3.08 vs generation 9.57 TWh
+demand_far_below_generation,Mozambique,MOZ,2001,demand 6.19 vs generation 11.76 TWh
+demand_far_below_generation,Mozambique,MOZ,2002,demand 6.20 vs generation 12.58 TWh
+demand_far_below_generation,Mozambique,MOZ,2003,demand 8.51 vs generation 10.79 TWh
+demand_far_below_generation,Mozambique,MOZ,2005,demand 10.74 vs generation 13.15 TWh
+demand_far_below_generation,Mozambique,MOZ,2006,demand 11.60 vs generation 14.59 TWh
+demand_far_below_generation,Mozambique,MOZ,2007,demand 12.13 vs generation 15.91 TWh
+demand_far_below_generation,Mozambique,MOZ,2008,demand 11.96 vs generation 14.97 TWh
+demand_far_below_generation,Mozambique,MOZ,2009,demand 12.43 vs generation 16.79 TWh
+demand_far_below_generation,Mozambique,MOZ,2010,demand 13.13 vs generation 16.67 TWh
+demand_far_below_generation,Mozambique,MOZ,2011,demand 13.66 vs generation 16.59 TWh
+demand_far_below_generation,Mozambique,MOZ,2015,demand 15.08 vs generation 18.38 TWh
+demand_far_below_generation,Mozambique,MOZ,2016,demand 15.53 vs generation 18.86 TWh
+demand_far_below_generation,Mozambique,MOZ,2020,demand 15.61 vs generation 19.02 TWh
+demand_far_below_generation,Mozambique,MOZ,2021,demand 15.90 vs generation 18.86 TWh
+demand_far_below_generation,Mozambique,MOZ,2022,demand 16.37 vs generation 19.56 TWh
+demand_far_below_generation,Mozambique,MOZ,2023,demand 16.50 vs generation 19.96 TWh
+demand_far_below_generation,Mozambique,MOZ,2024,demand 16.49 vs generation 19.79 TWh
+demand_far_below_generation,Uganda,UGA,2002,demand 1.46 vs generation 1.72 TWh
+demand_far_below_generation,Zambia,ZMB,2000,demand 6.36 vs generation 7.71 TWh
+demand_far_below_generation,Zambia,ZMB,2022,demand 16.43 vs generation 19.47 TWh
+demand_far_below_generation,Zambia,ZMB,2023,demand 16.09 vs generation 19.46 TWh
+demand_far_below_generation,Zambia,ZMB,2024,demand 16.60 vs generation 19.72 TWh
+net_imports_repeated_exactly,Cameroon,CMR,2019,net imports 0.05 TWh identical to previous year (possible carry-forward)
+net_imports_repeated_exactly,Cameroon,CMR,2024,net imports 0.06 TWh identical to previous year (possible carry-forward)
+net_imports_repeated_exactly,Congo,COG,2012,net imports 0.03 TWh identical to previous year (possible carry-forward)
+net_imports_repeated_exactly,Cote d'Ivoire,CIV,2012,net imports -0.59 TWh identical to previous year (possible carry-forward)
+net_imports_repeated_exactly,Democratic Republic of Congo,COD,2013,net imports 0.58 TWh identical to previous year (possible carry-forward)
+net_imports_repeated_exactly,Democratic Republic of Congo,COD,2018,net imports 0.73 TWh identical to previous year (possible carry-forward)
+net_imports_repeated_exactly,Democratic Republic of Congo,COD,2024,net imports 1.44 TWh identical to previous year (possible carry-forward)
+net_imports_repeated_exactly,Gabon,GAB,2024,net imports 0.58 TWh identical to previous year (possible carry-forward)
+net_imports_repeated_exactly,Kenya,KEN,2007,net imports -0.04 TWh identical to previous year (possible carry-forward)
+net_imports_repeated_exactly,Malawi,MWI,2002,net imports -0.01 TWh identical to previous year (possible carry-forward)
+net_imports_repeated_exactly,Malawi,MWI,2003,net imports -0.01 TWh identical to previous year (possible carry-forward)
+net_imports_repeated_exactly,Malawi,MWI,2004,net imports -0.01 TWh identical to previous year (possible carry-forward)
+net_imports_repeated_exactly,Malawi,MWI,2005,net imports -0.01 TWh identical to previous year (possible carry-forward)
+net_imports_repeated_exactly,Malawi,MWI,2006,net imports -0.01 TWh identical to previous year (possible carry-forward)
+net_imports_repeated_exactly,Malawi,MWI,2008,net imports -0.02 TWh identical to previous year (possible carry-forward)
+net_imports_repeated_exactly,Malawi,MWI,2009,net imports -0.02 TWh identical to previous year (possible carry-forward)
+net_imports_repeated_exactly,Malawi,MWI,2010,net imports -0.02 TWh identical to previous year (possible carry-forward)
+net_imports_repeated_exactly,Malawi,MWI,2011,net imports -0.02 TWh identical to previous year (possible carry-forward)
+net_imports_repeated_exactly,Malawi,MWI,2012,net imports -0.02 TWh identical to previous year (possible carry-forward)
+net_imports_repeated_exactly,Malawi,MWI,2013,net imports -0.02 TWh identical to previous year (possible carry-forward)
+net_imports_repeated_exactly,Malawi,MWI,2014,net imports -0.02 TWh identical to previous year (possible carry-forward)
+net_imports_repeated_exactly,Malawi,MWI,2015,net imports -0.02 TWh identical to previous year (possible carry-forward)
+net_imports_repeated_exactly,Malawi,MWI,2016,net imports -0.02 TWh identical to previous year (possible carry-forward)
+net_imports_repeated_exactly,Malawi,MWI,2017,net imports -0.02 TWh identical to previous year (possible carry-forward)
+net_imports_repeated_exactly,Malawi,MWI,2018,net imports -0.02 TWh identical to previous year (possible carry-forward)
+net_imports_repeated_exactly,Malawi,MWI,2019,net imports -0.02 TWh identical to previous year (possible carry-forward)
+net_imports_repeated_exactly,Malawi,MWI,2020,net imports -0.02 TWh identical to previous year (possible carry-forward)
+net_imports_repeated_exactly,Malawi,MWI,2021,net imports -0.02 TWh identical to previous year (possible carry-forward)
+net_imports_repeated_exactly,Malawi,MWI,2022,net imports -0.02 TWh identical to previous year (possible carry-forward)
+net_imports_repeated_exactly,Malawi,MWI,2023,net imports -0.02 TWh identical to previous year (possible carry-forward)
+net_imports_repeated_exactly,Malawi,MWI,2024,net imports -0.02 TWh identical to previous year (possible carry-forward)
+net_imports_repeated_exactly,Nigeria,NGA,2002,net imports -0.03 TWh identical to previous year (possible carry-forward)
+net_imports_repeated_exactly,Nigeria,NGA,2025,net imports -2.30 TWh identical to previous year (possible carry-forward)
+net_imports_repeated_exactly,Senegal,SEN,2019,net imports 0.32 TWh identical to previous year (possible carry-forward)
+net_imports_repeated_exactly,Tanzania,TZA,2001,net imports 0.05 TWh identical to previous year (possible carry-forward)
+net_imports_repeated_exactly,Tanzania,TZA,2002,net imports 0.05 TWh identical to previous year (possible carry-forward)
+net_imports_repeated_exactly,Tanzania,TZA,2003,net imports 0.05 TWh identical to previous year (possible carry-forward)
+net_imports_repeated_exactly,Tanzania,TZA,2004,net imports 0.05 TWh identical to previous year (possible carry-forward)
+net_imports_repeated_exactly,Tanzania,TZA,2005,net imports 0.05 TWh identical to previous year (possible carry-forward)
+net_imports_repeated_exactly,Tanzania,TZA,2007,net imports 0.06 TWh identical to previous year (possible carry-forward)
+net_imports_repeated_exactly,Tanzania,TZA,2010,net imports 0.06 TWh identical to previous year (possible carry-forward)
+net_imports_repeated_exactly,Tanzania,TZA,2013,net imports 0.06 TWh identical to previous year (possible carry-forward)
+net_imports_repeated_exactly,Tanzania,TZA,2014,net imports 0.06 TWh identical to previous year (possible carry-forward)
+net_imports_repeated_exactly,Tanzania,TZA,2020,net imports 0.11 TWh identical to previous year (possible carry-forward)
+net_imports_repeated_exactly,Tanzania,TZA,2024,net imports 0.19 TWh identical to previous year (possible carry-forward)
+net_imports_repeated_exactly,Uganda,UGA,2001,net imports -0.16 TWh identical to previous year (possible carry-forward)
+net_imports_repeated_exactly,Uganda,UGA,2013,net imports -0.06 TWh identical to previous year (possible carry-forward)
+net_imports_repeated_exactly,Uganda,UGA,2024,net imports -0.44 TWh identical to previous year (possible carry-forward)
+net_imports_repeated_exactly,Zimbabwe,ZWE,2015,net imports -0.10 TWh identical to previous year (possible carry-forward)
+net_imports_zero_then_nonzero,Cameroon,CMR,2000,net imports exactly 0 in 2000-2022 (14 yrs) but non-zero in other years
+net_imports_zero_then_nonzero,Congo,COG,2014,net imports exactly 0 in 2014-2022 (7 yrs) but non-zero in other years
+net_imports_zero_then_nonzero,Ethiopia,ETH,2000,net imports exactly 0 in 2000-2010 (11 yrs) but non-zero in other years
+net_imports_zero_then_nonzero,Gabon,GAB,2000,net imports exactly 0 in 2000-2012 (13 yrs) but non-zero in other years
+net_imports_zero_then_nonzero,Kenya,KEN,2005,net imports exactly 0 in 2005-2013 (4 yrs) but non-zero in other years
+net_imports_zero_then_nonzero,Malawi,MWI,2000,net imports exactly 0 in 2000-2000 (1 yrs) but non-zero in other years
+net_imports_zero_then_nonzero,Mali,MLI,2000,net imports exactly 0 in 2000-2001 (2 yrs) but non-zero in other years
+net_imports_zero_then_nonzero,Nigeria,NGA,2005,net imports exactly 0 in 2005-2015 (11 yrs) but non-zero in other years
+net_imports_zero_then_nonzero,Senegal,SEN,2000,net imports exactly 0 in 2000-2008 (9 yrs) but non-zero in other years
+net_imports_zero_then_nonzero,Sudan,SDN,2000,net imports exactly 0 in 2000-2011 (12 yrs) but non-zero in other years
+net_imports_zero_then_nonzero,Uganda,UGA,2006,net imports exactly 0 in 2006-2006 (1 yrs) but non-zero in other years
+yoy_jump_over_40pct,Burkina Faso,BFA,2018,1.12 -> 1.87 TWh (+67%)
+yoy_jump_over_40pct,Congo,COG,2015,1.76 -> 2.79 TWh (+59%)
+yoy_jump_over_40pct,Ethiopia,ETH,2024,17.77 -> 25.20 TWh (+42%)
+yoy_jump_over_40pct,Guinea,GIN,2016,1.14 -> 1.61 TWh (+41%)
+yoy_jump_over_40pct,Guinea,GIN,2021,2.48 -> 3.64 TWh (+47%)
+yoy_jump_over_40pct,Mali,MLI,2010,1.56 -> 2.36 TWh (+51%)
+yoy_jump_over_40pct,Namibia,NAM,2020,1.38 -> 2.00 TWh (+45%)
+yoy_jump_over_40pct,Namibia,NAM,2023,1.32 -> 1.89 TWh (+43%)
+yoy_jump_over_40pct,Tanzania,TZA,2005,2.61 -> 3.66 TWh (+40%)
