@@ -4,13 +4,13 @@
 
 **Live dashboard:** https://shieldemma.github.io/africa-electricity-data-audit/
 
-An automated, tested pipeline that audits national electricity statistics for 30 sub-Saharan African countries (2000–2025). It cross-checks three public sources, runs its quality checks in both Python and SQL, and publishes an interactive dashboard that refreshes every month.
+An automated, tested pipeline that audits national electricity statistics for 30 sub-Saharan African countries (2000–2025). It joins Our World in Data electricity data (built on Ember and Energy Institute data) with World Bank WDI, runs its quality checks in both Python and SQL, and publishes an interactive dashboard that GitHub Actions refreshes every month.
 
 ## What it shows
 
 | Skill | Where it lives |
 |---|---|
-| Multi-source data ingestion from bulk files and REST APIs (OWID, Ember, World Bank WDI) | `pipeline/fetch.py` |
+| Multi-source ingestion: OWID bulk CSV + World Bank WDI REST API (Ember's bulk file is also tried each run and skipped if unavailable) | `pipeline/fetch.py` |
 | Data validation: 6 automated checks plus cross-source reconciliation | `pipeline/checks.py`, `pipeline/crosscheck.py` |
 | SQL (DuckDB): the same checks written in SQL, with the pipeline asserting both versions agree | `sql/checks.sql`, `run_pipeline.py` |
 | Statistical modelling: log-linear OLS trend with a 90% prediction interval, out to 2030 | `pipeline/forecast.py` |
@@ -29,14 +29,14 @@ Run it locally: `pip install -r requirements.txt && python -m pytest -q tests &&
 | Demand >15% below generation | Real exporters, or output from shared assets assigned to one country |
 | Year-on-year change in generation >40% (systems >1 TWh) | Breaks in a series, new plants, or reporting changes |
 | Sources don't sum to the total, and gaps between years | Internal consistency |
-| OWID vs Ember: generation differs by >2%; OWID shows 0 imports where Ember shows trade | Disagreement between sources or vintages |
+| OWID vs Ember (when Ember's file is available): generation differs by >2%; OWID shows 0 imports where Ember shows trade | Disagreement between sources or vintages |
 | OWID vs World Bank population differs by >3% | Population denominators behind the per-capita metrics |
 
 Flag tables: `outputs/quality_issues_*.csv`. Headline numbers: `outputs/key_facts.json`.
 
 ## Findings so far
 
-**1. Zero-vs-missing trade data (Nigeria).** In OWID, Nigeria's net imports are small exports in 2000–2004, then **exactly 0 for 2005–2015**, then −2 to −3 TWh a year from 2016. Nigeria exported power to Niger, Benin and Togo throughout that period, so the zeros look like missing data. They inflate implied demand by about 2 TWh (6–7%) in those years. The pipeline compares this directly against Ember's net-import series (chart below and on the dashboard). The 2025 value also exactly repeats 2024's.
+**1. Zero-vs-missing trade data (Nigeria).** In OWID, Nigeria's net imports are small exports in 2000–2004, then **exactly 0 for 2005–2015**, then −2 to −3 TWh a year from 2016. Nigeria exported power to Niger, Benin and Togo throughout that period, so the zeros look like missing data. They inflate implied demand by about 2 TWh (6–7%) in those years. When Ember's bulk file is available, the pipeline also compares it against Ember's own net-import series. The 2025 value also exactly repeats 2024's.
 
 ![Nigeria net imports](outputs/nigeria_net_imports_zero_vs_missing.png)
 
@@ -46,7 +46,9 @@ Flag tables: `outputs/quality_issues_*.csv`. Headline numbers: `outputs/key_fact
 
 **3. Shared assets show up as "demand below generation".** Mali shows demand 16–37% below generation in 10 of the 11 years from 2002 to 2012. A plausible cause, which still needs verifying, is the Manantali dam: it sits in Mali, and its output is shared with Senegal and Mauritania.
 
-**4. Nigeria's grid.** 41.5 TWh in 2025: 68.7% gas, 30.9% hydro. That is about 175 kWh per person, among the lowest in the sample. Grid statistics also leave out Nigeria's large diesel/petrol self-generation.
+**4. Access-adjusted output (World Bank join).** Population denominators in OWID and the World Bank agree within 3% for every country-year in the sample. Using World Bank access rates, Nigeria's 2024 grid output works out to about **258 kWh per person with electricity access** (62.5% access). That compares with 4,287 in South Africa, 767 in Ghana and 305 in Kenya. See `outputs/ssa_access_and_generation_per_connected_person.csv`.
+
+**5. Nigeria's grid.** 41.5 TWh in 2025: 68.7% gas, 30.9% hydro. That is about 175 kWh per person, among the lowest in the sample. Grid statistics also leave out Nigeria's large diesel/petrol self-generation.
 
 ![Nigeria mix](outputs/nigeria_generation_mix.png)
 
