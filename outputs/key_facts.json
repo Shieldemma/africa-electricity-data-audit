@@ -1,0 +1,32 @@
+{
+  "nigeria_latest_year": 2025,
+  "nigeria_generation_twh": 41.54,
+  "nigeria_gas_share_pct": 68.7,
+  "nigeria_hydro_share_pct": 30.9,
+  "nigeria_kwh_per_person": 175,
+  "ssa_panel_countries": 30,
+  "ssa_last_full_year": 2024,
+  "ssa_countries_reporting_latest": 4,
+  "ssa_latest_year": 2025,
+  "ssa_solar_share_2015_pct": 0.63,
+  "ssa_solar_share_last_full_pct": 4.82,
+  "ssa_solar_naive_latest_pct": 6.12,
+  "ssa_solar_trend_growth_pct_per_year": 25.8,
+  "ssa_solar_2030_projection_pct": 19.2,
+  "ssa_solar_2030_interval_pct": [
+    16.7,
+    22.2
+  ],
+  "issues_total": 393,
+  "issues_ssa": 118,
+  "sources": {
+    "owid": true,
+    "ember": false,
+    "worldbank": false
+  },
+  "pandas_sql_agree": {
+    "zero_vs_missing": true,
+    "carried_forward": true,
+    "yoy_jumps": true
+  }
+}
