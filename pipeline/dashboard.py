@@ -40,11 +40,14 @@ def _net_imports(ng: pd.DataFrame, comparison: pd.DataFrame | None) -> go.Figure
     ni = ng["net_elec_imports"].dropna()
     fig = go.Figure(go.Bar(x=ni.index, y=ni.values, name="OWID", marker_color=["#d62728" if v == 0 else "#4C78A8" for v in ni.values],
                            hovertemplate="%{x}: %{y:.2f} TWh<extra>OWID</extra>"))
+    z = ni[ni == 0]
+    fig.add_trace(go.Scatter(x=z.index, y=z.values, mode="markers", name="Recorded as exactly 0",
+                             marker=dict(symbol="x", size=11, color="#d62728")))
     if comparison is not None:
         e = comparison[comparison["iso_code"] == "NGA"].set_index("year")["ember_net_imports"].dropna()
         if len(e):
             fig.add_trace(go.Scatter(x=e.index, y=e.values, mode="lines+markers", name="Ember", line=dict(color="#F58518")))
-    fig.update_layout(**LAYOUT, title="Nigeria net imports (TWh, negative = exports). Red bars = recorded as exactly 0")
+    fig.update_layout(**LAYOUT, title="Nigeria net imports (TWh, negative = exports). Red x = recorded as exactly 0")
     return fig
 
 
