@@ -87,7 +87,7 @@ def build_dashboard(path: Path, *, elec, issues, solar, solar_fc, ng, ng_fc, com
     path.parent.mkdir(exist_ok=True)
     figs = [_mix_with_dropdown(elec), _net_imports(ng, comparison), _solar(solar, solar_fc),
             _issues_heatmap(issues), _per_capita(elec, access)]
-    parts = [f.to_html(full_html=False, include_plotlyjs=("cdn" if i == 0 else False), config={"displaylogo": False})
+    parts = [f.to_html(full_html=False, include_plotlyjs=False, config={"displaylogo": False})
              for i, f in enumerate(figs)]
     src = facts["sources"]
     kpis = [
@@ -105,6 +105,7 @@ def build_dashboard(path: Path, *, elec, issues, solar, solar_fc, ng, ng_fc, com
     srcs = ", ".join(k for k, v in src.items() if v)
     page = f"""<!DOCTYPE html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Africa Electricity Data Audit</title>
+<script src="https://cdn.plot.ly/plotly-2.35.2.min.js" charset="utf-8"></script>
 <style>
 body{{font-family:Inter,Arial,sans-serif;margin:0;background:#f6f7f9;color:#1d2433}}
 header{{background:#0f2b3d;color:#fff;padding:28px 24px}} header h1{{margin:0 0 6px;font-size:26px}} header p{{margin:0;opacity:.85}}
