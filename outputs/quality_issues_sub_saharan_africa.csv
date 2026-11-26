@@ -48,66 +48,66 @@ demand_far_below_generation,Zambia,ZMB,2000,demand 6.36 vs generation 7.71 TWh
 demand_far_below_generation,Zambia,ZMB,2022,demand 16.43 vs generation 19.47 TWh
 demand_far_below_generation,Zambia,ZMB,2023,demand 16.09 vs generation 19.46 TWh
 demand_far_below_generation,Zambia,ZMB,2024,demand 16.60 vs generation 19.72 TWh
-net_imports_repeated_exactly,Cameroon,CMR,2019,net imports 0.05 TWh identical to previous year (possible carry-forward)
-net_imports_repeated_exactly,Cameroon,CMR,2024,net imports 0.06 TWh identical to previous year (possible carry-forward)
-net_imports_repeated_exactly,Congo,COG,2012,net imports 0.03 TWh identical to previous year (possible carry-forward)
-net_imports_repeated_exactly,Cote d'Ivoire,CIV,2012,net imports -0.59 TWh identical to previous year (possible carry-forward)
-net_imports_repeated_exactly,Democratic Republic of Congo,COD,2013,net imports 0.58 TWh identical to previous year (possible carry-forward)
-net_imports_repeated_exactly,Democratic Republic of Congo,COD,2018,net imports 0.73 TWh identical to previous year (possible carry-forward)
-net_imports_repeated_exactly,Democratic Republic of Congo,COD,2024,net imports 1.44 TWh identical to previous year (possible carry-forward)
-net_imports_repeated_exactly,Gabon,GAB,2024,net imports 0.58 TWh identical to previous year (possible carry-forward)
-net_imports_repeated_exactly,Kenya,KEN,2007,net imports -0.04 TWh identical to previous year (possible carry-forward)
-net_imports_repeated_exactly,Malawi,MWI,2002,net imports -0.01 TWh identical to previous year (possible carry-forward)
-net_imports_repeated_exactly,Malawi,MWI,2003,net imports -0.01 TWh identical to previous year (possible carry-forward)
-net_imports_repeated_exactly,Malawi,MWI,2004,net imports -0.01 TWh identical to previous year (possible carry-forward)
-net_imports_repeated_exactly,Malawi,MWI,2005,net imports -0.01 TWh identical to previous year (possible carry-forward)
-net_imports_repeated_exactly,Malawi,MWI,2006,net imports -0.01 TWh identical to previous year (possible carry-forward)
-net_imports_repeated_exactly,Malawi,MWI,2008,net imports -0.02 TWh identical to previous year (possible carry-forward)
-net_imports_repeated_exactly,Malawi,MWI,2009,net imports -0.02 TWh identical to previous year (possible carry-forward)
-net_imports_repeated_exactly,Malawi,MWI,2010,net imports -0.02 TWh identical to previous year (possible carry-forward)
-net_imports_repeated_exactly,Malawi,MWI,2011,net imports -0.02 TWh identical to previous year (possible carry-forward)
-net_imports_repeated_exactly,Malawi,MWI,2012,net imports -0.02 TWh identical to previous year (possible carry-forward)
-net_imports_repeated_exactly,Malawi,MWI,2013,net imports -0.02 TWh identical to previous year (possible carry-forward)
-net_imports_repeated_exactly,Malawi,MWI,2014,net imports -0.02 TWh identical to previous year (possible carry-forward)
-net_imports_repeated_exactly,Malawi,MWI,2015,net imports -0.02 TWh identical to previous year (possible carry-forward)
-net_imports_repeated_exactly,Malawi,MWI,2016,net imports -0.02 TWh identical to previous year (possible carry-forward)
-net_imports_repeated_exactly,Malawi,MWI,2017,net imports -0.02 TWh identical to previous year (possible carry-forward)
-net_imports_repeated_exactly,Malawi,MWI,2018,net imports -0.02 TWh identical to previous year (possible carry-forward)
-net_imports_repeated_exactly,Malawi,MWI,2019,net imports -0.02 TWh identical to previous year (possible carry-forward)
-net_imports_repeated_exactly,Malawi,MWI,2020,net imports -0.02 TWh identical to previous year (possible carry-forward)
-net_imports_repeated_exactly,Malawi,MWI,2021,net imports -0.02 TWh identical to previous year (possible carry-forward)
-net_imports_repeated_exactly,Malawi,MWI,2022,net imports -0.02 TWh identical to previous year (possible carry-forward)
-net_imports_repeated_exactly,Malawi,MWI,2023,net imports -0.02 TWh identical to previous year (possible carry-forward)
-net_imports_repeated_exactly,Malawi,MWI,2024,net imports -0.02 TWh identical to previous year (possible carry-forward)
-net_imports_repeated_exactly,Nigeria,NGA,2002,net imports -0.03 TWh identical to previous year (possible carry-forward)
-net_imports_repeated_exactly,Nigeria,NGA,2025,net imports -2.30 TWh identical to previous year (possible carry-forward)
-net_imports_repeated_exactly,Senegal,SEN,2019,net imports 0.32 TWh identical to previous year (possible carry-forward)
-net_imports_repeated_exactly,Tanzania,TZA,2001,net imports 0.05 TWh identical to previous year (possible carry-forward)
-net_imports_repeated_exactly,Tanzania,TZA,2002,net imports 0.05 TWh identical to previous year (possible carry-forward)
-net_imports_repeated_exactly,Tanzania,TZA,2003,net imports 0.05 TWh identical to previous year (possible carry-forward)
-net_imports_repeated_exactly,Tanzania,TZA,2004,net imports 0.05 TWh identical to previous year (possible carry-forward)
-net_imports_repeated_exactly,Tanzania,TZA,2005,net imports 0.05 TWh identical to previous year (possible carry-forward)
-net_imports_repeated_exactly,Tanzania,TZA,2007,net imports 0.06 TWh identical to previous year (possible carry-forward)
-net_imports_repeated_exactly,Tanzania,TZA,2010,net imports 0.06 TWh identical to previous year (possible carry-forward)
-net_imports_repeated_exactly,Tanzania,TZA,2013,net imports 0.06 TWh identical to previous year (possible carry-forward)
-net_imports_repeated_exactly,Tanzania,TZA,2014,net imports 0.06 TWh identical to previous year (possible carry-forward)
-net_imports_repeated_exactly,Tanzania,TZA,2020,net imports 0.11 TWh identical to previous year (possible carry-forward)
-net_imports_repeated_exactly,Tanzania,TZA,2024,net imports 0.19 TWh identical to previous year (possible carry-forward)
-net_imports_repeated_exactly,Uganda,UGA,2001,net imports -0.16 TWh identical to previous year (possible carry-forward)
-net_imports_repeated_exactly,Uganda,UGA,2013,net imports -0.06 TWh identical to previous year (possible carry-forward)
-net_imports_repeated_exactly,Uganda,UGA,2024,net imports -0.44 TWh identical to previous year (possible carry-forward)
-net_imports_repeated_exactly,Zimbabwe,ZWE,2015,net imports -0.10 TWh identical to previous year (possible carry-forward)
-net_imports_zero_then_nonzero,Cameroon,CMR,2000,net imports exactly 0 in 2000-2022 (14 yrs) but non-zero in other years
-net_imports_zero_then_nonzero,Congo,COG,2014,net imports exactly 0 in 2014-2022 (7 yrs) but non-zero in other years
-net_imports_zero_then_nonzero,Ethiopia,ETH,2000,net imports exactly 0 in 2000-2010 (11 yrs) but non-zero in other years
-net_imports_zero_then_nonzero,Gabon,GAB,2000,net imports exactly 0 in 2000-2012 (13 yrs) but non-zero in other years
-net_imports_zero_then_nonzero,Kenya,KEN,2005,net imports exactly 0 in 2005-2013 (4 yrs) but non-zero in other years
-net_imports_zero_then_nonzero,Malawi,MWI,2000,net imports exactly 0 in 2000-2000 (1 yrs) but non-zero in other years
-net_imports_zero_then_nonzero,Mali,MLI,2000,net imports exactly 0 in 2000-2001 (2 yrs) but non-zero in other years
-net_imports_zero_then_nonzero,Nigeria,NGA,2005,net imports exactly 0 in 2005-2015 (11 yrs) but non-zero in other years
-net_imports_zero_then_nonzero,Senegal,SEN,2000,net imports exactly 0 in 2000-2008 (9 yrs) but non-zero in other years
-net_imports_zero_then_nonzero,Sudan,SDN,2000,net imports exactly 0 in 2000-2011 (12 yrs) but non-zero in other years
-net_imports_zero_then_nonzero,Uganda,UGA,2006,net imports exactly 0 in 2006-2006 (1 yrs) but non-zero in other years
+net_imports_repeated_exactly,Cameroon,CMR,2019,net_elec_imports 0.05 identical to previous year
+net_imports_repeated_exactly,Cameroon,CMR,2024,net_elec_imports 0.06 identical to previous year
+net_imports_repeated_exactly,Congo,COG,2012,net_elec_imports 0.03 identical to previous year
+net_imports_repeated_exactly,Cote d'Ivoire,CIV,2012,net_elec_imports -0.59 identical to previous year
+net_imports_repeated_exactly,Democratic Republic of Congo,COD,2013,net_elec_imports 0.58 identical to previous year
+net_imports_repeated_exactly,Democratic Republic of Congo,COD,2018,net_elec_imports 0.73 identical to previous year
+net_imports_repeated_exactly,Democratic Republic of Congo,COD,2024,net_elec_imports 1.44 identical to previous year
+net_imports_repeated_exactly,Gabon,GAB,2024,net_elec_imports 0.58 identical to previous year
+net_imports_repeated_exactly,Kenya,KEN,2007,net_elec_imports -0.04 identical to previous year
+net_imports_repeated_exactly,Malawi,MWI,2002,net_elec_imports -0.01 identical to previous year
+net_imports_repeated_exactly,Malawi,MWI,2003,net_elec_imports -0.01 identical to previous year
+net_imports_repeated_exactly,Malawi,MWI,2004,net_elec_imports -0.01 identical to previous year
+net_imports_repeated_exactly,Malawi,MWI,2005,net_elec_imports -0.01 identical to previous year
+net_imports_repeated_exactly,Malawi,MWI,2006,net_elec_imports -0.01 identical to previous year
+net_imports_repeated_exactly,Malawi,MWI,2008,net_elec_imports -0.02 identical to previous year
+net_imports_repeated_exactly,Malawi,MWI,2009,net_elec_imports -0.02 identical to previous year
+net_imports_repeated_exactly,Malawi,MWI,2010,net_elec_imports -0.02 identical to previous year
+net_imports_repeated_exactly,Malawi,MWI,2011,net_elec_imports -0.02 identical to previous year
+net_imports_repeated_exactly,Malawi,MWI,2012,net_elec_imports -0.02 identical to previous year
+net_imports_repeated_exactly,Malawi,MWI,2013,net_elec_imports -0.02 identical to previous year
+net_imports_repeated_exactly,Malawi,MWI,2014,net_elec_imports -0.02 identical to previous year
+net_imports_repeated_exactly,Malawi,MWI,2015,net_elec_imports -0.02 identical to previous year
+net_imports_repeated_exactly,Malawi,MWI,2016,net_elec_imports -0.02 identical to previous year
+net_imports_repeated_exactly,Malawi,MWI,2017,net_elec_imports -0.02 identical to previous year
+net_imports_repeated_exactly,Malawi,MWI,2018,net_elec_imports -0.02 identical to previous year
+net_imports_repeated_exactly,Malawi,MWI,2019,net_elec_imports -0.02 identical to previous year
+net_imports_repeated_exactly,Malawi,MWI,2020,net_elec_imports -0.02 identical to previous year
+net_imports_repeated_exactly,Malawi,MWI,2021,net_elec_imports -0.02 identical to previous year
+net_imports_repeated_exactly,Malawi,MWI,2022,net_elec_imports -0.02 identical to previous year
+net_imports_repeated_exactly,Malawi,MWI,2023,net_elec_imports -0.02 identical to previous year
+net_imports_repeated_exactly,Malawi,MWI,2024,net_elec_imports -0.02 identical to previous year
+net_imports_repeated_exactly,Nigeria,NGA,2002,net_elec_imports -0.03 identical to previous year
+net_imports_repeated_exactly,Nigeria,NGA,2025,net_elec_imports -2.30 identical to previous year
+net_imports_repeated_exactly,Senegal,SEN,2019,net_elec_imports 0.32 identical to previous year
+net_imports_repeated_exactly,Tanzania,TZA,2001,net_elec_imports 0.05 identical to previous year
+net_imports_repeated_exactly,Tanzania,TZA,2002,net_elec_imports 0.05 identical to previous year
+net_imports_repeated_exactly,Tanzania,TZA,2003,net_elec_imports 0.05 identical to previous year
+net_imports_repeated_exactly,Tanzania,TZA,2004,net_elec_imports 0.05 identical to previous year
+net_imports_repeated_exactly,Tanzania,TZA,2005,net_elec_imports 0.05 identical to previous year
+net_imports_repeated_exactly,Tanzania,TZA,2007,net_elec_imports 0.06 identical to previous year
+net_imports_repeated_exactly,Tanzania,TZA,2010,net_elec_imports 0.06 identical to previous year
+net_imports_repeated_exactly,Tanzania,TZA,2013,net_elec_imports 0.06 identical to previous year
+net_imports_repeated_exactly,Tanzania,TZA,2014,net_elec_imports 0.06 identical to previous year
+net_imports_repeated_exactly,Tanzania,TZA,2020,net_elec_imports 0.11 identical to previous year
+net_imports_repeated_exactly,Tanzania,TZA,2024,net_elec_imports 0.19 identical to previous year
+net_imports_repeated_exactly,Uganda,UGA,2001,net_elec_imports -0.16 identical to previous year
+net_imports_repeated_exactly,Uganda,UGA,2013,net_elec_imports -0.06 identical to previous year
+net_imports_repeated_exactly,Uganda,UGA,2024,net_elec_imports -0.44 identical to previous year
+net_imports_repeated_exactly,Zimbabwe,ZWE,2015,net_elec_imports -0.10 identical to previous year
+net_imports_zero_then_nonzero,Cameroon,CMR,2000,"net_elec_imports exactly 0 in 14 yrs (2000-2022), non-zero elsewhere"
+net_imports_zero_then_nonzero,Congo,COG,2014,"net_elec_imports exactly 0 in 7 yrs (2014-2022), non-zero elsewhere"
+net_imports_zero_then_nonzero,Ethiopia,ETH,2000,"net_elec_imports exactly 0 in 11 yrs (2000-2010), non-zero elsewhere"
+net_imports_zero_then_nonzero,Gabon,GAB,2000,"net_elec_imports exactly 0 in 13 yrs (2000-2012), non-zero elsewhere"
+net_imports_zero_then_nonzero,Kenya,KEN,2005,"net_elec_imports exactly 0 in 4 yrs (2005-2013), non-zero elsewhere"
+net_imports_zero_then_nonzero,Malawi,MWI,2000,"net_elec_imports exactly 0 in 1 yrs (2000-2000), non-zero elsewhere"
+net_imports_zero_then_nonzero,Mali,MLI,2000,"net_elec_imports exactly 0 in 2 yrs (2000-2001), non-zero elsewhere"
+net_imports_zero_then_nonzero,Nigeria,NGA,2005,"net_elec_imports exactly 0 in 11 yrs (2005-2015), non-zero elsewhere"
+net_imports_zero_then_nonzero,Senegal,SEN,2000,"net_elec_imports exactly 0 in 9 yrs (2000-2008), non-zero elsewhere"
+net_imports_zero_then_nonzero,Sudan,SDN,2000,"net_elec_imports exactly 0 in 12 yrs (2000-2011), non-zero elsewhere"
+net_imports_zero_then_nonzero,Uganda,UGA,2006,"net_elec_imports exactly 0 in 1 yrs (2006-2006), non-zero elsewhere"
 yoy_jump_over_40pct,Burkina Faso,BFA,2018,1.12 -> 1.87 TWh (+67%)
 yoy_jump_over_40pct,Congo,COG,2015,1.76 -> 2.79 TWh (+59%)
 yoy_jump_over_40pct,Ethiopia,ETH,2024,17.77 -> 25.20 TWh (+42%)

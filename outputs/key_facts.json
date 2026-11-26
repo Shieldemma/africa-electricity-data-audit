@@ -22,7 +22,7 @@
   "sources": {
     "owid": true,
     "ember": false,
-    "worldbank": false
+    "worldbank": true
   },
   "pandas_sql_agree": {
     "zero_vs_missing": true,
